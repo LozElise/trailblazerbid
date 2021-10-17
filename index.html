@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<title>Space Apps Challenge</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://lozelise.github.io/GlobalLunarPrioritisationNetwork/images/Lunar Map.jpg");
+  min-height: 100%;
+}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.button2:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid purple;
+}
+.button5:hover {
+  background-color: purple;
+  color: white;
+}
+</style>
+<script type='text/javascript'>//<![CDATA[
+  $(window).load(function(){
+	  
+      $('#before_imagequal').click(function ()
+    {
+       $('#before_imagequal').ready(function(event)
+       {
+           $('#before_imagequal').hide();
+           $('#after_imagequal').show();
+       });
+    });
+	  
+	  
+	  
+  $('#before_imagequal').click(function() {
+      var timeStartqual = new Date().getTime();
+      var timerqual = setInterval(function() {
+          var nowqual = new Date().getTime();
+          var remainingqual = Math.max(0, 2000 - (nowqual - timeStartqual));
+          $("#cntrqual").html((remainingqual / 1000).toFixed(1));
+         if (remainingqual <= 0) {
+              clearInterval(timerqual);
+          }
+      }, 100);
+//      $("#after_imagequal").delay(2000).fadeOut("slow");
+  });
+  }); 
+  </script>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image" src="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/images/logo.png" alt="Logo" width="41" height="35">GLOBAL LUNAR PRIORITISATION NETWORK</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/map" class="w3-bar-item w3-button"><i class="fa fa-map"></i> MAP</a>
+      <a href="#vote" class="w3-bar-item w3-button"><i class="fa fa-th"></i> VOTE</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TEAM</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/login" class="w3-bar-item w3-button"><i class="fa fa-user"></i> REGISTER</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/map" onclick="w3_close()" class="w3-bar-item w3-button">MAP</a>
+  <a href="#vote" onclick="w3_close()" class="w3-bar-item w3-button">VOTE</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    <span class="w3-jumbo w3-black w3-text-white w3-hide-small">Have your say on where we land</span><br>
+    <span class="w3-xxlarge w3-black w3-text-white w3-hide-large w3-hide-medium">Have your say on where we land</span><br>
+    <span class="w3-large w3-black w3-text-white">Learn about how we investegate the moon and have your say in what's important</span>
+    <p><a href="#vote" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and vote</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">WHAT ARE WE DOING?</h3>
+  <p class="w3-center w3-large">And how can you be involved?</p>
+  <p class="w3-center">There are many things we can learn from our exploration of the moon. But where do we look? By capturing priorities across scientists who study the moon as well as the wider community, we create a map that dynamically displays the most relevant and feasible zones for lunar sampling to take place. </p>
+  
+  <p class="w3-center">This saves time, money, and ensures wider involvement and transparency across all citizens interested in our exploration of our moon.</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-half">
+      <i class="fa fa-bar-chart w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Data-driven</p>
+      <p>Using advanced image processing techniques, we aggregate Lunar data from a range of sources to create a feasibility map of regions of potential interest.</p>
+    </div>
+    <div class="w3-half">
+      <i class="fa fa-hand-stop-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">People-driven</p>
+      <p>We augment map data with feedback from the citizen and scientific community to weight potential landing zones with real-world interest.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Promo Section - "Step 1" -->
+<div class="w3-container w3-black w3-text-white" style="padding:28px 16px">
+  <h3 class="w3-center">HOW DOES IT WORK?</h3>
+</div>
+
+
+<div class="w3-container w3-light-grey" style="padding:50px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6"
+     style="padding:50px 16px">
+      <h3>Step 1</h3>
+      <p class="w3-large">First, we take location data of the moon pertaining to specific research or engineering goals such as the likelihood of water, or mineral deposits, etc. in different zones.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/images/drops.jpg" alt="Water Drops" width="700" height="394">
+    </div>
+  </div>
+  </div>
+  
+<div class="w3-container w3-light-grey" style="padding:50px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6"
+     style="padding:50px 16px">
+      <h3>Step 2</h3>
+      <p class="w3-large">We take citizen, scientist, and engineer votes on collection priorities (e.g. water discovery, specific mineral analysis, etc.) <strong>right here on this website</strong>.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/images/people.jpg" alt="People" width="700" height="394">
+    </div>
+  </div>
+  </div>
+  
+<div class="w3-container w3-light-grey" style="padding:50px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6"
+     style="padding:50px 16px">
+      <h3>Step 3</h3>
+      <p class="w3-large">We aggregate data collected from steps 1 & 2 to form a priority map driven by data and the collective goals of the scientific and wider community.</p>
+	<p class="w3-large">Then, through advanced techniques, we find the landing zones with the highest potential relative to community goals, as well as providing the shortest path to optimise travel time and resources.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/images/algorithm.jpg" alt="Algorithm" width="700" height="394">
+    </div>
+  </div>
+  </div>
+  
+<div class="w3-container w3-light-grey" style="padding:50px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6"
+     style="padding:50px 16px">
+      <h3>Step 4</h3>
+      <p class="w3-large">Finally, we map out the shortest path between identified strategic locations for a future robotic or human collection mission.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/images/compass.jpg" alt="Compass" width="700" height="394">
+    </div>
+  </div>
+  </div>
+<div class="w3-container w3-light-grey w3-center" style="padding:20px 16px">
+  <p class="w3-center w3-large">By directing missions to locations with the highest value for the largest proportion of the scientific community, we will streamline missions, saving resources, astronaut and extravehicular activity time</p>
+     <p><a href="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/map" class="w3-center w3-button w3-black"><i class="fa fa-th"> </i> View the Live Map</a></p>
+</div>
+
+
+<!-- Vote Section -->
+<div class="w3-container w3-white" style="padding:50px 16px" id="vote">
+<h2>Priority Interests</h2>  <div id="before_imagequal">
+<p>There are a range of potential scientific uses for lunar samples.</p>
+<p>Which do you think is more important to you? Vote below and see where your choice sits in the world's citizen priorities:</p>
+<a href="#nogo" title="buttons">
+<button class="button button1">Search for Water</button>
+<button class="button button2">Search for Minerals</button>
+<button class="button button3">A Good Place to Build</button>
+<button class="button button5">Understanding the History of the Moon</button>
+</a><p><i>Note: Citizen votes are passed on to NASA to capture areas of public interest, and are displayed here to demonstrate how scientific research groups will bid for mission priorities, feeding into data analysis for landing site and route recommendations.</i></p>
+	  <p>For more information on any of the above uses, visit our info page <a href="#nogo" title="Other languages">here</a></p></div>
+
+
+<div id="after_imagequal" style="display:none;">      <img class="w3-image w3-round-large" src="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/images/gifchart.gif" alt="Graph" width="1000" height="600"</p>
+<p class="w3-large">Thanks for your vote! See the current prioritised maps here: <a href="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/map" class="w3-center w3-button w3-black"><i class="fa fa-th"> </i> View the Live Map</a></p></div>
+	</div>
+
+
+	
+<!-- Team Section -->
+<div class="w3-container w3-light-grey" style="padding:28px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">We're a multidisciplinary team leveraging our backgrounds in machine learning, data analytics, mining, UX and psychology to acheive our collective goal of providing a transparent, economic, value-driven visualisation of our moon.</p>
+      <img src="https://lozelise.github.io/GlobalLunarPrioritisationNetwork/images/Team.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-white" style="padding:28px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Brisbane, AUS</p>
+    <p><i class="fa fa-slack fa-fw w3-xxlarge w3-margin-right"></i> Phone (at Avestix Lab): 1300 766 261</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
