@@ -40,41 +40,138 @@ body, html {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
+
+</style>
+
+<style>
+.parallax1 {
+        background-color: white;
+        background-image: url("https://lozelise.github.io/trailblazerbid/images/NASA-lunar-surface.png");
+        height: 100%; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*following just for demo purposes to add height and top padding*/
+        height:100vh;
+        padding-top:20vh;
+    }
+    .parallax1-curtain{
+      height:40vh;
+      background:rgba(130,130,133,1);
+    }
+.parallax11 {
+        background-color: black;
+        background-image: url("https://lozelise.github.io/trailblazerbid/images/NASA-lunar-surface.png");
+        height: 100%; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax11-curtain{
+      height:40vh;
+      background:rgba(255,255,255,0.4);
+    }
+
+.parallax2 {
+        background-color: white;
+        background-image: url("https://lozelise.github.io/trailblazerbid/images/NASA-lunar-surface.png");
+        height: 100%; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*following just for demo purposes to add height and top padding*/
+        height:100vh;
+        padding-top:20vh;
+    }
+    .parallax2-curtain{
+      height:40vh;
+      background:rgba(130,130,133,1);
+    }
+.parallax21 {
+        background-color: black;
+        background-image: url("https://lozelise.github.io/trailblazerbid/images/NASA-lunar-surface.png");
+        height: 100%; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax21-curtain{
+      height:40vh;
+      background:rgba(255,255,255,0.4);
+    }
+    
+.parallax3 {
+        background-color: white;
+        background-image: url("https://lozelise.github.io/trailblazerbid/images/NASA-lunar-surface.png");
+        height: 100%; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*following just for demo purposes to add height and top padding*/
+        height:100vh;
+        padding-top:20vh;
+    }
+    .parallax3-curtain{
+      height:40vh;
+      background:rgba(130,130,133,1);
+    }
+.parallax31 {
+        background-color: black;
+        background-image: url("https://lozelise.github.io/trailblazerbid/images/NASA-lunar-surface.png");
+        height: 100%; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax31-curtain{
+      height:40vh;
+      background:rgba(255,255,255,0.4);
+    }
+</style>
+
+<style>
+html, body {
+    height: 100%;
+    margin: 0
 }
-.button1:hover {
-  background-color: #008CBA;
-  color: white;
+
+.onScreen1 .path1 {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 10s forwards;
 }
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
+
+.onScreen2 .path2 {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 10s forwards;
 }
-.button2:hover {
-  background-color: #4CAF50;
-  color: white;
+
+.onScreen3 .path3 {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 10s forwards;
 }
-.button3 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #f44336;
-}
-.button3:hover {
-  background-color: #f44336;
-  color: white;
-}
-.button5 {
-  background-color: white;
-  color: black;
-  border: 2px solid purple;
-}
-.button5:hover {
-  background-color: purple;
-  color: white;
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 </style>
 
@@ -146,8 +243,129 @@ body, html {
   </div>
 </div>
 
+<!-- Summary Section -->
+<div class="parallax1">
+  <div class="parallax1-curtain">
+   <p> test text</p>
+  </div>
+</div>
+<div class="parallax11">
+  <div class="parallax11-curtain">
 
-<!-- Promo Section - "Step 1" -->
+<div class="svg-animation1">
+<svg viewBox="0 0 680 666">
+
+  <path class="path1" fill="transparent" stroke="black" stroke-width="2" d="M95.79,44.56c-16.91-5.14-33.81-10.28-50.72-15.42c-0.41,20.69-0.81,41.39-1.22,62.08
+	c17.34-3.69,34.67-7.37,52.01-11.06c0.3-11.76,0.6-23.51,0.9-35.27c1.48,0.3,2.95,0.6,4.43,0.9c-0.3,11.24-0.6,22.49-0.9,33.73
+	c26.59-2.9,53.18-5.81,79.77-8.71c-0.84-0.56-7.69-5.27-8.32-14.01c-0.48-6.62,2.78-13.05,8.47-16.79
+	c-25.64,2.04-51.29,4.09-76.93,6.13c26.37-2.34,52.75-4.67,79.12-7.01c1.66-0.74,7.9-3.3,14.45-0.73
+	c8.42,3.3,14.7,14.01,10.66,23.94c-3.89,9.54-15.57,14.08-25.25,9.34c1.9-4.18,3.8-8.37,5.69-12.55c-2.31-0.89-3.43-3.45-2.63-5.55
+	c0.91-2.38,3.9-3.17,5.99-2.19c1.49,0.7,2.65,2.36,2.48,4.23c-0.19,2.15-2,3.25-2.19,3.36c10.78,10.71,21.56,21.41,32.34,32.12
+	c1.82-2.8,4.46-6.27,8.18-9.71c4.48-4.15,8.92-6.79,12.27-8.44c-14.4-11.16-28.8-22.33-43.2-33.49
+	c14.91,11.42,29.83,22.84,44.74,34.26c-1.48,2.88-4.01,6.99-8.18,10.99c-4.55,4.38-9.18,6.84-12.27,8.18
+	c9.88,10.06,19.77,20.11,29.65,30.17c-3.24-6.59-1.48-14.57,4.15-19.12c5.81-4.69,14.29-4.56,20.04,0.37
+	c-10.81-10-21.63-20.01-32.44-30.01c11.81,10.81,23.61,21.63,35.42,32.44c3.78,6.61,3.1,14.55-1.27,19.27
+	c-5.71,6.17-17.32,6.38-24.55-1.43c6.92,7.01,13.84,14.02,20.76,21.02c-2.96,5.11-5.93,10.21-8.89,15.32
+	c27.83,0.55,55.67,1.1,83.5,1.65c-2.58-4.78-5.16-9.55-7.74-14.33c0.05-7.22,0.11-14.43,0.16-21.65
+	c-5.71-0.64-11.41-1.27-17.12-1.91c-0.05,3.68-0.11,7.36-0.16,11.03c-14.16-9.22-28.33-18.45-42.49-27.67
+	c6.06,4.52,13.56,11.76,15.32,21.9c2.58,14.89-9.42,23.38-5.76,31.29c6.82,14.75,57.01,3.59,57.64,7.19
+	c0.36,2.07-15.93,8.02-37.5,11.56c-29.16,4.78-47.74,1.86-48.03,4.11c-0.35,2.8,27.94,10.6,60.36,14.13
+	c29.22,3.18,45.28,1.09,45.72,4.11c0.61,4.2-29.58,13.4-58.3,18.24c-31.29,5.27-47.69,3.13-48.03,5.91
+	c-0.68,5.53,63.41,20.8,130.91,27.81c49.15,5.1,90.47,4.82,119.76,3.49" pathLength="1" />
+  
+</svg>
+  
+</div>
+  </div>
+</div>
+
+<div class="parallax2">
+  <div class="parallax2-curtain">
+   <p> test text</p>
+  </div>
+</div>
+<div class="parallax21">
+  <div class="parallax21-curtain">
+
+<div class="svg-animation2">
+<svg viewBox="0 0 680 666">
+
+  <path class="path2" fill="transparent" stroke="black" stroke-width="2" d="M278.46,101.37c23.66,6.38,47.31,12.77,70.97,19.15c5.01,27.13,10.02,54.27,15.03,81.4
+	c-5.74,2.08-11.49,4.16-17.23,6.23c-6.46-15.33-17.76-26.37-28.23-25.67c-15.31,1.03-26.32,26.97-21.72,47.01
+	c4.09,17.8,21.57,35.56,35.29,31.83c12.13-3.3,21.94-23.56,16.13-48.03c56.59-15.03,113.18-30.07,169.77-45.1
+	c-5.01-3.54-10.02-7.09-15.03-10.63c5.06-14.16,14.32-25.48,24.47-26.02c15.88-0.84,31.18,24.84,27.6,46.18
+	c-2.43,14.47-14.16,30.52-26.3,30.04c-12.83-0.5-27.04-19.49-26.8-47.72c-26.76-20.78-53.51-41.56-80.27-62.34
+	c-3.18,0.98-6.35,1.95-9.53,2.93c26.89,20.95,53.78,41.91,80.67,62.86c-2.96,1.49-11.81,5.47-22.85,3.23
+	c-6.49-1.32-11.17-4.27-13.81-6.25c-8.99,2.83-17.97,5.65-26.96,8.48c6.52,2.19,7.78,3.94,7.77,5.11
+	c-0.02,1.85-3.33,2.41-20.53,8.43c-5.99,2.1-9.05,3.12-12.47,2.2c-4.91-1.33-7.84-5.46-9.17-7.7c-8.92,2.81-17.84,5.62-26.77,8.43
+	c2.76,2.51,5.96,5.84,5.12,7.46c-1.53,2.95-15.57-1.5-20.52-3.06c-21.42-6.74-63.91-19.46-123.2-37.03
+	c-5.01,1.71-10.02,3.42-15.03,5.13c6.48,27.02-0.23,48.54-11.01,52.11c-11.52,3.82-29.7-12.2-34.46-30.11
+	c-4.94-18.59,3.42-43.46,17.6-45.47c9.3-1.32,19.67,7.7,26.77,19.8c4.89-1.71,9.78-3.42,14.67-5.13
+	c16.01-16.62,32.02-33.24,48.03-49.87c21-6.3,41.99-12.61,62.99-18.91c26.83,4.97,53.65,9.94,80.48,14.92
+	c-22.94,7.74-45.88,15.48-68.83,23.22c-4.25-6.89-8.49-13.78-12.74-20.67c0.13-11.1,0.26-22.2,0.38-33.29
+	c-2.88-8.54-5.76-17.08-8.64-25.62c0.15-0.4,3.55-8.89,12.22-10.39c6.79-1.18,13.85,2.45,17.22,9.02
+	c-7.76,1.37-15.52,2.74-23.27,4.11c0.88-4.94,5.17-8.3,9.58-7.99c3.83,0.27,7.71,3.32,7.99,7.53c0.33,4.9-4.4,8.51-7.99,8.67
+	c-5.05,0.23-8.57-6.36-9.13-5.93c-0.67,0.52,3.2,11.16,9.58,11.64c5.26,0.4,12-6.12,12.06-16.25c-1.34,7.54-2.69,15.07-4.03,22.61
+	c2.17,11.23,4.34,22.46,6.5,33.69" pathLength="1" />
+  
+</svg>
+  
+</div>
+  </div>
+</div>
+
+<div class="parallax3">
+  <div class="parallax3-curtain">
+   <p> test text</p>
+  </div>
+</div>
+<div class="parallax31">
+  <div class="parallax31-curtain">
+
+<div class="svg-animation3">
+<svg viewBox="0 0 680 666">
+
+  <path class="path3" fill="transparent" stroke="black" stroke-width="2" d="M458.89,108.61c8.66,4.77,17.32,9.54,25.98,14.31c1.12-1.89,2.24-3.78,3.35-5.66
+	c-2.91-1.61-5.82-3.22-8.73-4.84c4.04-7.27,8.08-14.54,12.12-21.81c0.21-0.31,1.26-1.86,3.34-2.31c2.28-0.5,4.01,0.71,4.28,0.9
+	c6.02,3.26,12.03,6.52,18.05,9.78c0.4,0.23,1.77,1.08,2.45,2.85c0.77,2.03,0.06,3.79-0.1,4.16c-4.09,7.12-8.18,14.24-12.26,21.36
+	c-3.17-1.66-6.35-3.32-9.52-4.98c-1.11,2.06-2.21,4.12-3.32,6.18c6.15,3.43,12.31,6.89,18.48,10.36c3.14,1.76,6.27,3.53,9.39,5.3
+	c1.12-1.89,2.24-3.78,3.35-5.66c-2.91-1.61-5.82-3.22-8.73-4.84c4.04-7.27,8.08-14.54,12.12-21.81c0.21-0.31,1.26-1.86,3.34-2.31
+	c2.28-0.5,4.01,0.71,4.28,0.9c6.02,3.26,12.03,6.52,18.05,9.78c0.4,0.23,1.77,1.08,2.45,2.85c0.77,2.03,0.06,3.79-0.1,4.16
+	c-4.09,7.12-8.18,14.24-12.26,21.36c-3.17-1.66-6.35-3.32-9.52-4.98c-1.11,2.06-2.21,4.12-3.32,6.18
+	c6.16,3.45,12.32,6.91,18.48,10.36c0.85,0.4,1.08,1.43,0.67,2.02c-0.38,0.54-1.29,0.71-1.97,0.21c-6.16-3.46-12.31-6.93-18.47-10.39
+	c-1.18,2.02-2.36,4.03-3.55,6.05c3.07,1.85,6.14,3.69,9.21,5.54c-3.95,7.2-7.9,14.39-11.85,21.59c-0.23,0.33-1.37,1.85-3.5,2.25
+	c-1.86,0.35-3.3-0.38-3.71-0.6c-5.91-3.44-11.83-6.88-17.74-10.32c-0.31-0.13-2.23-0.98-3-3.18c-0.7-2.01,0.07-3.71,0.23-4.05
+	c4.1-7.23,8.21-14.47,12.31-21.7c2.89,1.65,5.78,3.29,8.68,4.94c1.03-1.94,2.06-3.87,3.09-5.81c-3.14-1.75-6.27-3.51-9.41-5.26
+	c-6.16-3.46-12.31-6.93-18.47-10.39c-1.18,2.02-2.36,4.03-3.55,6.05c3.07,1.85,6.14,3.69,9.21,5.54c-3.95,7.2-7.9,14.39-11.85,21.59
+	c-0.23,0.33-1.37,1.85-3.5,2.25c-1.86,0.35-3.3-0.38-3.71-0.6c-5.91-3.44-11.83-6.88-17.74-10.32c-0.31-0.13-2.23-0.98-3-3.18
+	c-0.7-2.01,0.07-3.71,0.23-4.05c4.1-7.23,8.21-14.47,12.31-21.7c2.89,1.65,5.78,3.29,8.68,4.94c1.03-1.94,2.06-3.87,3.09-5.81
+	c-8.58-4.91-17.16-9.82-25.75-14.73c-0.07,0.6-0.4,2.55-2.07,4.17c-1.36,1.31-2.88,1.7-3.51,1.82c0.35,12.44,0.69,24.88,1.04,37.31
+	c-4.09,0.39-29.51,2.39-48.76-16.25c-10.61-10.28-14.5-22.15-15.99-28.08c12.48-2.95,24.96-5.89,37.44-8.84
+	c-0.08-0.83-0.1-2.33,0.52-4.03c0.75-2.06,2.03-3.32,2.69-3.88c-6.62-6.36-13.24-12.71-19.86-19.07c-1.57,1.53-3.14,3.07-4.71,4.6
+	c2.39,2.31,4.78,4.63,7.18,6.94c-5.79,5.97-11.57,11.94-17.36,17.92c-0.28,0.25-1.7,1.47-3.82,1.36c-2.33-0.11-3.69-1.72-3.9-1.98
+	c-4.96-4.71-9.93-9.42-14.89-14.13c-0.33-0.33-1.43-1.5-1.62-3.39c-0.21-2.16,0.93-3.67,1.18-3.99c5.8-5.81,11.59-11.63,17.39-17.44
+	c2.63,2.43,5.27,4.86,7.9,7.29c1.6-1.7,3.21-3.4,4.81-5.1c-5.05-4.93-10.11-9.87-15.16-14.8c-2.57-2.52-5.13-5.04-7.7-7.55
+	c-1.57,1.53-3.14,3.07-4.71,4.6c2.39,2.31,4.78,4.63,7.18,6.94c-5.79,5.97-11.57,11.94-17.36,17.92c-0.28,0.25-1.7,1.46-3.82,1.36
+	c-2.33-0.11-3.69-1.72-3.9-1.98c-4.96-4.71-9.93-9.42-14.89-14.13c-0.33-0.33-1.43-1.5-1.62-3.39c-0.21-2.16,0.93-3.67,1.18-3.99
+	c5.8-5.81,11.59-11.63,17.39-17.44c2.63,2.43,5.27,4.86,7.9,7.29c1.6-1.7,3.21-3.4,4.81-5.1c-5.05-4.93-10.11-9.87-15.16-14.8
+	c-0.72-0.61-0.67-1.66-0.12-2.12c0.5-0.42,1.43-0.35,1.96,0.31c5.05,4.94,10.09,9.88,15.14,14.83c1.66-1.64,3.33-3.28,4.99-4.92
+	c-2.49-2.58-4.97-5.16-7.46-7.74c5.68-5.92,11.37-11.85,17.05-17.77c0.31-0.26,1.8-1.43,3.96-1.26c1.89,0.15,3.09,1.22,3.42,1.54
+	c4.82,4.86,9.64,9.72,14.46,14.58c0.26,0.2,1.9,1.52,2.07,3.85c0.15,2.12-1.03,3.57-1.28,3.85c-5.84,5.92-11.68,11.84-17.52,17.76
+	c-2.37-2.34-4.73-4.68-7.1-7.02c-1.5,1.6-2.99,3.21-4.49,4.81c2.57,2.51,5.15,5.02,7.72,7.53c5.05,4.94,10.09,9.88,15.14,14.83
+	c1.66-1.64,3.33-3.28,4.99-4.92c-2.49-2.58-4.97-5.16-7.46-7.74c5.68-5.92,11.37-11.85,17.05-17.77c0.31-0.26,1.8-1.43,3.96-1.26
+	c1.89,0.15,3.09,1.22,3.42,1.54c4.82,4.86,9.64,9.72,14.46,14.58c0.26,0.2,1.9,1.52,2.07,3.85c0.15,2.12-1.03,3.57-1.28,3.85
+	c-5.84,5.92-11.68,11.84-17.52,17.76c-2.37-2.34-4.73-4.68-7.1-7.02c-1.5,1.6-2.99,3.21-4.49,4.81
+	c6.72,6.63,13.44,13.26,20.16,19.89c1.06-1.21,2.12-2.42,3.18-3.63c-0.74-0.47-1.49-0.94-2.23-1.41c1.52-2.17,3.03-4.33,4.55-6.5
+	c-1.26-0.95-2.51-1.91-3.77-2.86c2.04-2.77,4.07-5.55,6.11-8.32c12.17,7.21,24.34,14.43,36.51,21.64
+	c-3.47,4.89-6.95,9.79-10.42,14.68c-1.18-0.67-2.37-1.34-3.55-2.01C460.86,105.09,459.87,106.85,458.89,108.61z" pathLength="1" />
+  
+</svg>
+  
+</div>
+  </div>
+</div>
+
+<!-- Team Section  -->
 <div class="w3-container w3-black w3-text-white" style="padding:28px 16px">
   <h3 class="w3-center">Our Team</h3>
 </div>
@@ -213,8 +431,37 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+ 
+
+<script>
+
+function animation1(event) {
+var wrapper = document.querySelector('.svg-animation1');
+  if (wrapper.getBoundingClientRect().top < 700) {
+    wrapper.className = "svg-animation1 onScreen1";
+  }
+ }
+function animation2(event) {
+var wrapper = document.querySelector('.svg-animation2');
+  if (wrapper.getBoundingClientRect().top < 700) {
+    wrapper.className = "svg-animation2 onScreen2";
+  }
+}
+function animation3(event) {
+var wrapper = document.querySelector('.svg-animation3');
+  if (wrapper.getBoundingClientRect().top < 700) {
+    wrapper.className = "svg-animation3 onScreen3";
+  }
+}
+window.onscroll = function (event) {
+  animation1(event);
+  animation2(event);
+  animation3(event);
+}
+
+</script>
+
  
 <script>
 // Modal Image Gallery
